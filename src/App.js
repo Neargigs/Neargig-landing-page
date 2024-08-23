@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+import Jobs from "./components/Jobs";
+import Benefits from "./components/Benefits";
+import Blogs from "./components/Blogs";
+import Faq from "./components/Faq";
+import Foot from "./components/Foot";
+
+import "./assets/vendor/bootstrap/css/bootstrap.min.css";
+import "./assets/vendor/bootstrap-icons/bootstrap-icons.css";
+import "./assets/vendor/aos/aos.css";
+import "./assets/vendor/glightbox/css/glightbox.min.css";
+import "./assets/vendor/swiper/swiper-bundle.min.css";
+import "./assets/css/main.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav />
+      <main class="main">
+        <Hero />
+        <Jobs />
+        <Benefits />
+        <Blogs />
+        <Faq />
+      </main>
+      <Foot />
+    </>
   );
 }
 
