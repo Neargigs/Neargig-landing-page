@@ -1,5 +1,5 @@
 import React from "react";
-import person from "../assets/img/testimonials/testimonials-2.jpg";
+import person from "../assets/img/testimonials/avater.jpg";
 
 // Define your data structure for jobs, freelance jobs, and gigs
 const jobsData = [
@@ -7,7 +7,7 @@ const jobsData = [
     id: 1,
     logo: person,
     title: "Senior Graphic Designer",
-    date: "Posted 2 days ago",
+    date: "Posted 3 days ago",
     location: "Boston, USA | Full-time | Remote",
     tags: ["Design & Creative", "Motion Design", "Graphic Design"],
   },
@@ -17,41 +17,40 @@ const jobsData = [
     title: "Blockchain Developer",
     date: "Posted 5 days ago",
     location: "San Francisco, USA | Full-time | On-site",
-    tags: ["Development", "Blockchain", "Solidity"],
+    tags: ["Development", "Blockchain", "Solidity", "Ethereum"],
   },
   {
     id: 3,
     logo: person,
-    title: "Senior Graphic Designer",
-    date: "Posted 2 days ago",
-    location: "Boston, USA | Full-time | Remote",
-    tags: ["Design & Creative", "Motion Design", "Graphic Design"],
+    title: "Marketing Specialist",
+    date: "Posted 1 week ago",
+    location: "London, UK | Part-time | Remote",
+    tags: ["Marketing", "Digital Marketing", "SEO"],
   },
   {
     id: 4,
     logo: person,
-    title: "Blockchain Developer",
-    date: "Posted 5 days ago",
-    location: "San Francisco, USA | Full-time | On-site",
-    tags: ["Development", "Blockchain", "Solidity"],
+    title: "Product Manager",
+    date: "Posted 10 days ago",
+    location: "Berlin, Germany | Full-time | Hybrid",
+    tags: ["Product Management", "Agile", "Scrum"],
   },
   {
     id: 5,
     logo: person,
-    title: "Senior Graphic Designer",
-    date: "Posted 2 days ago",
-    location: "Boston, USA | Full-time | Remote",
-    tags: ["Design & Creative", "Motion Design", "Graphic Design"],
+    title: "Front-End Developer",
+    date: "Posted 2 weeks ago",
+    location: "Toronto, Canada | Contract | Remote",
+    tags: ["Development", "JavaScript", "React", "CSS"],
   },
   {
     id: 6,
     logo: person,
-    title: "Blockchain Developer",
-    date: "Posted 5 days ago",
-    location: "San Francisco, USA | Full-time | On-site",
-    tags: ["Development", "Blockchain", "Solidity"],
+    title: "Data Scientist",
+    date: "Posted 3 weeks ago",
+    location: "Sydney, Australia | Full-time | On-site",
+    tags: ["Data Science", "Machine Learning", "Python", "SQL"],
   },
-  // Add more jobs as needed
 ];
 
 const freelanceJobsData = [
@@ -61,41 +60,60 @@ const freelanceJobsData = [
     title: "Virtual Assistant for Marketing and Sales",
     assigner: "John Doe",
     description:
-      "We're seeking a highly motivated and tech-savvy Virtual Assistant to join our dynamic team. You'll play a crucial role.",
-    tags: ["Design & Creative", "Motion Design", "Graphic Design"],
+      "Seeking a tech-savvy Virtual Assistant to support our marketing and sales team with lead generation, social media management, and email outreach.",
+    tags: ["Marketing", "Virtual Assistance", "Sales Support"],
     price: "$1,200",
   },
   {
     id: 2,
     logo: person,
-    title: "Virtual Assistant for Marketing and Sales",
+    title: "Freelance Blockchain Consultant",
     assigner: "Jane Smith",
     description:
-      "We're seeking a highly motivated and tech-savvy Virtual Assistant to join our dynamic team. You'll play a crucial role...",
-    tags: ["Development", "Blockchain", "Solidity"],
+      "Looking for an experienced Blockchain Consultant to guide our team on smart contract development and best practices.",
+    tags: ["Blockchain", "Consulting", "Smart Contracts"],
     price: "$2,500",
   },
   {
     id: 3,
     logo: person,
-    title: "Virtual Assistant for Marketing and Sales",
-    assigner: "John Doe",
+    title: "Graphic Designer for Social Media",
+    assigner: "Carlos Gomez",
     description:
-      "We're seeking a highly motivated and tech-savvy Virtual Assistant to join our dynamic team. You'll play a crucial role.",
-    tags: ["Design & Creative", "Motion Design", "Graphic Design"],
-    price: "$1,200",
+      "We need a talented Graphic Designer to create engaging social media graphics for a global audience, focusing on brand consistency and creativity.",
+    tags: ["Graphic Design", "Social Media", "Branding"],
+    price: "$900",
   },
   {
     id: 4,
     logo: person,
-    title: "Virtual Assistant for Marketing and Sales",
-    assigner: "Jane Smith",
+    title: "React Developer for eCommerce Site",
+    assigner: "Alice Johnson",
     description:
-      "We're seeking a highly motivated and tech-savvy Virtual Assistant to join our dynamic team. You'll play a crucial role...",
-    tags: ["Development", "Blockchain", "Solidity"],
-    price: "$2,500",
+      "Seeking a React Developer to build a responsive and optimized eCommerce site with a focus on user experience and performance.",
+    tags: ["Web Development", "React", "eCommerce"],
+    price: "$3,000",
   },
-  // Add more freelance jobs as needed
+  {
+    id: 5,
+    logo: person,
+    title: "Content Writer for Blog Articles",
+    assigner: "Michael Lee",
+    description:
+      "In search of a Content Writer to produce well-researched articles on technology and innovation for our blog.",
+    tags: ["Writing", "Content Creation", "SEO"],
+    price: "$500",
+  },
+  {
+    id: 6,
+    logo: person,
+    title: "UX Designer for Mobile App",
+    assigner: "Emma Watson",
+    description:
+      "We’re looking for a UX Designer to enhance user experience in our mobile app, focusing on navigation flow and usability.",
+    tags: ["UX Design", "Mobile App", "Prototyping"],
+    price: "$1,800",
+  },
 ];
 
 const gigsData = [
@@ -104,9 +122,10 @@ const gigsData = [
     logo: person,
     title: "Junior Frontend Developer",
     assigner: "John Doe",
-    description: "Promoting memecoin, crypto social media & investment sites",
+    description:
+      "Developing a responsive user interface for a healthcare application with a focus on accessibility.",
     tags: ["React", "JavaScript", "HTML/CSS"],
-    price: "$1200",
+    price: "$1,200",
     rating: "★★★★☆",
   },
   {
@@ -114,32 +133,34 @@ const gigsData = [
     logo: person,
     title: "Backend Developer",
     assigner: "Jane Smith",
-    description: "Promoting memecoin, crypto social media & investment sites",
+    description:
+      "Building scalable APIs for a fintech app, ensuring secure and efficient transactions.",
     tags: ["Node.js", "API", "MongoDB"],
-    price: "$2500",
+    price: "$2,500",
     rating: "★★★★☆",
   },
   {
     id: 3,
     logo: person,
-    title: "Junior Frontend Developer",
-    assigner: "John Doe",
-    description: "Promoting memecoin, crypto social media & investment sites",
-    tags: ["React", "JavaScript", "HTML/CSS"],
-    price: "$1200",
-    rating: "★★★★☆",
+    title: "Social Media Content Creator",
+    assigner: "Carlos Mendoza",
+    description:
+      "Creating engaging social media content for a travel agency, focusing on visuals and storytelling.",
+    tags: ["Content Creation", "Social Media", "Storytelling"],
+    price: "$800",
+    rating: "★★★☆☆",
   },
   {
     id: 4,
     logo: person,
-    title: "Backend Developer",
-    assigner: "Jane Smith",
-    description: "Promoting memecoin, crypto social media & investment sites",
-    tags: ["Node.js", "API", "MongoDB"],
-    price: "$2500",
-    rating: "★★★★☆",
+    title: "SEO Specialist",
+    assigner: "Alice Johnson",
+    description:
+      "Optimizing content and website structure for an e-commerce store to improve search engine rankings.",
+    tags: ["SEO", "Content Optimization", "Digital Marketing"],
+    price: "$1,500",
+    rating: "★★★★★",
   },
-  // Add more gigs as needed
 ];
 
 const Jobs = () => {
